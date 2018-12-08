@@ -1,3 +1,4 @@
+
 import java.io.File;
 import java.io.*;
 
@@ -24,6 +25,8 @@ public class HuffMainDecompress {
 				           bis.bitsRead(),bos.bitsWritten());
 		long diff = 8*(outf.length() - inf.length());
 		long diff2 = bos.bitsWritten() - bis.bitsRead();
+		
+		
 		System.out.printf("%d compared to %d\n",diff,diff2);
 	}
 }
